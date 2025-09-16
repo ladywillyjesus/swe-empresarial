@@ -2196,6 +2196,46 @@
             }
         }
         
+        /* Team Section Styles */
+        .team-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
+        }
+
+        .team-member:hover .member-image img {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover .member-overlay {
+            opacity: 1;
+        }
+
+        .member-overlay a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Team Responsive */
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+            
+            .member-image {
+                height: 250px !important;
+            }
+            
+            .member-info {
+                padding: 25px 20px !important;
+            }
+        }
+
         /* High DPI Displays */
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .fusion-logo img {
@@ -2561,6 +2601,11 @@
                                 <li class="menu-item">
                                     <a href="#priser" class="fusion-bar-highlight">
                                         <span class="menu-text">Priser</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#personal" class="fusion-bar-highlight">
+                                        <span class="menu-text">Personal</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
@@ -3009,6 +3054,68 @@
 
                                         <div class="exclusions" style="background: #dbeafe; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #3b82f6;">
                                             <p><strong>Ej inkluderat:</strong> Efterlysning av material, komplettering av ofullständigt material, rättelser på grund av kompletteringar samt förändringsrådgivning, till exempel vid företagsförvärv, bolagsärenden eller myndighetsprocesser, ingår inte i våra fasta priser utan debiteras enligt löpande taxa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Team/Personal Section -->
+                        <section id="personal" class="team-section" aria-labelledby="team-title">
+                            <div class="team-container" style="max-width: 1200px; margin: 0 auto; padding: 80px 20px;">
+                                <div class="team-header" style="text-align: center; margin-bottom: 60px;">
+                                    <h2 id="team-title" style="font-size: 38px; font-weight: 700; color: #1e293b; margin-bottom: 20px;">Kontaktpersoner på företaget</h2>
+                                    <p style="font-size: 1.2rem; color: #64748b; max-width: 600px; margin: 0 auto;">Vårt professionella team av erfarna ekonomer och redovisningskonsulter</p>
+                                </div>
+                                
+                                <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                                    <!-- Gulay Sanli -->
+                                    <div class="team-member" style="background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08); transition: all 0.4s ease; border: 1px solid #e2e8f0;">
+                                        <div class="member-image" style="position: relative; height: 280px; overflow: hidden;">
+                                            <img src="https://swekonomi.se/wp-content/uploads/2021/01/gulay_sanli-300x300.jpg" 
+                                                 alt="Gulay Sanli - Kontorschef på SWE Företagsekonomi AB" 
+                                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                                                 loading="lazy" />
+                                            <div class="member-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(30, 58, 138, 0.8); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                                                <div class="member-contact">
+                                                    <a href="mailto:info@swekonomi.se" style="background: white; color: #1e40af; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📧 Kontakt</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="member-info" style="padding: 30px; text-align: center;">
+                                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Gulay Sanli</h3>
+                                            <p style="font-size: 1.1rem; color: #1e40af; font-weight: 600; margin-bottom: 15px;">Kontorschef</p>
+                                            <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">Ansvarar för den dagliga verksamheten och kundrelationer. Specialist på företagsredovisning och ekonomisk rådgivning.</p>
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+                                                <span style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 500;">Redovisning</span>
+                                                <span style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 500;">Deklarationer</span>
+                                                <span style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 500;">Rådgivning</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Sanna Rydén -->
+                                    <div class="team-member" style="background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08); transition: all 0.4s ease; border: 1px solid #e2e8f0;">
+                                        <div class="member-image" style="position: relative; height: 280px; overflow: hidden;">
+                                            <img src="https://swekonomi.se/wp-content/uploads/2021/05/sanna-300x300.jpg" 
+                                                 alt="Sanna Rydén - Administratör på SWE Företagsekonomi AB" 
+                                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                                                 loading="lazy" />
+                                            <div class="member-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(30, 58, 138, 0.8); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                                                <div class="member-contact">
+                                                    <a href="mailto:info@swekonomi.se" style="background: white; color: #1e40af; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📧 Kontakt</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="member-info" style="padding: 30px; text-align: center;">
+                                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Sanna Rydén</h3>
+                                            <p style="font-size: 1.1rem; color: #1e40af; font-weight: 600; margin-bottom: 15px;">Administratör</p>
+                                            <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">Hanterar löneadministration och kundservice. Expert på bokföring och administrativa rutiner för företag.</p>
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+                                                <span style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 500;">Löneadministration</span>
+                                                <span style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 500;">Bokföring</span>
+                                                <span style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 500;">Kundservice</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
