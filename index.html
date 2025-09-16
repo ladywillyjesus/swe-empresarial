@@ -2220,6 +2220,14 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
+        /* Ajustar proporción de las fotos del personal */
+        .team-member img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
         /* Team Responsive */
         @media (max-width: 768px) {
             .team-grid {
@@ -2228,7 +2236,7 @@
             }
             
             .member-image {
-                height: 250px !important;
+                height: 180px !important;
             }
             
             .member-info {
@@ -3071,10 +3079,10 @@
                                 <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
                                     <!-- Gulay Sanli -->
                                     <div class="team-member" style="background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08); transition: all 0.4s ease; border: 1px solid #e2e8f0;">
-                                        <div class="member-image" style="position: relative; height: 280px; overflow: hidden;">
+                                        <div class="member-image" style="position: relative; height: 200px; overflow: hidden;">
                                             <img src="https://swekonomi.se/wp-content/uploads/2021/01/gulay_sanli-300x300.jpg" 
                                                  alt="Gulay Sanli - Kontorschef på SWE Företagsekonomi AB" 
-                                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                                                 style="width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.4s ease;"
                                                  loading="lazy" />
                                             <div class="member-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(30, 58, 138, 0.8); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
                                                 <div class="member-contact">
@@ -3096,10 +3104,10 @@
                                     
                                     <!-- Sanna Rydén -->
                                     <div class="team-member" style="background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08); transition: all 0.4s ease; border: 1px solid #e2e8f0;">
-                                        <div class="member-image" style="position: relative; height: 280px; overflow: hidden;">
+                                        <div class="member-image" style="position: relative; height: 200px; overflow: hidden;">
                                             <img src="https://swekonomi.se/wp-content/uploads/2021/05/sanna-300x300.jpg" 
                                                  alt="Sanna Rydén - Administratör på SWE Företagsekonomi AB" 
-                                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;"
+                                                 style="width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.4s ease;"
                                                  loading="lazy" />
                                             <div class="member-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(30, 58, 138, 0.8); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
                                                 <div class="member-contact">
